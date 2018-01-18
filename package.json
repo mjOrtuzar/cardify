@@ -1,0 +1,19 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "* **Track:** _Common Core_ * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_ * **Unidad:** _Producto final_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjOrtuzar/cardify.git"
+  },
+  "author": "mjOrtuzar-Dany-Nok-bimiriya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjOrtuzar/cardify/issues"
+  },
+  "homepage": "https://github.com/mjOrtuzar/cardify#readme"
+}
