@@ -18,8 +18,19 @@ Nuestro plugin para la Web App _Cardify_ permite ver al usuario el atributo `alt
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+<script src="cardify.js"></script>
 ```
+
+### Requerimientos Técnicos
+
+El proyecto fue realizado con las siguientes dependencias NPM:
+
++ Dependencias de Desarrollo 
+  - Eslint `~v.4.15.0`
+
++ Dependencias de Producción 
+  - jQuery `~v.3.3.1`
+
 
 ## Uso
 
