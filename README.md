@@ -29,7 +29,8 @@ El proyecto fue realizado con las siguientes dependencias NPM:
   - Eslint `~v.4.15.0`
 
 + Dependencias de Producción 
-  - jQuery `~v.3.3.1`
+  - jQuery `~v.3.2.1`
+  - Bootstrap `~v.3.3.7`
 
 
 ## Uso
@@ -37,9 +38,5 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 ```js
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
-$(container).cardify({});
+$(container).cardify();
 ```
-
-## Ejemplos
-
-...
