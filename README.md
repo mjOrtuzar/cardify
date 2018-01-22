@@ -1,36 +1,16 @@
-# Cardify
+# Cardify plugin
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Un _plugin_ es un conjunto de scripts que expande las capacidades y la funcionalidad de una aplicación más extensa.
+Nuestro plugin para la Web App _Cardify_ permite ver al usuario el atributo `alt`sobre cada imagen en la que se haya hecho hover.
 
-***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+## Funcionalidad
 
-## Flujo de trabajo
+1. Primero el plugin selecciona todas las imagenes de una página y las reemplaza por un elemento `<figure>`
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+2. A su vez, inserta un elemento `<img>` dentro de `<figure>`
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
-
-***
+3. Y, por último, añade un elemento `<figcaption>` para mostrar el atributo `alt` sobre la imagen al hacer hover
 
 ## Instalación
 
@@ -38,17 +18,25 @@ con el texto del atributo `alt` de la imagen.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+<script src="cardify.js"></script>
 ```
+
+### Requerimientos Técnicos
+
+El proyecto fue realizado con las siguientes dependencias NPM:
+
++ Dependencias de Desarrollo 
+  - Eslint `~v.4.15.0`
+
++ Dependencias de Producción 
+  - jQuery `~v.3.2.1`
+  - Bootstrap `~v.3.3.7`
+
 
 ## Uso
 
 ```js
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
-$(container).cardify({});
+$(container).cardify();
 ```
-
-## Ejemplos
-
-...
