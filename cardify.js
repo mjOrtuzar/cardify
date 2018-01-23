@@ -1,14 +1,22 @@
 $.fn.cardify = function() {
-  $(this).find('img').wrap('<figure style="position: relative; text-align: center;"></figure>');
-  $('figure').append('<figcaption style="position: absolute; font-size: 20px; color: white; text-shadow: 2px 2px black; top: 0; width: 100%; vertical-align: middle;"></figcaption>');
+  $(this).find('img').wrap('<figure></figure>');
+  $('figure').append('<figcaption></figcaption>');
 
   $('figure img').mouseover(function() {
-    $(this).siblings('figcaption').text($(this).attr('alt'));
-    $(this).siblings('figcaption').css('margin', this.clientHeight / 2 + 'px 0');
-    $(this).css('filter', 'blur(5px)');
-  });
-  $('figure').mouseleave(function() {
-    $(this).find('img').siblings('figcaption').text('');
-    $(this).find('img').css('filter', 'blur(0px)');
+    const basePkm = $(this).attr('src');
+    const evoPkm = $(this).data('evo');
+    $(this).attr('src', evoPkm);
+    $(this).data('evo', basePkm);
+    let altPos = $(this).attr('alt').indexOf(' ');
+    $(this).siblings('figcaption').text($(this).attr('alt').slice(altPos, $(this).attr('alt').length));
+
+    $(this).mouseleave(function() {
+      $(this).attr('src', basePkm);
+      $(this).data('evo', evoPkm);
+      let altPos = $(this).attr('alt').indexOf(' ');
+      $(this).siblings('figcaption').text($(this).attr('alt').slice(0, altPos));
+    });
   });
 };
+
+$('section').cardify();
