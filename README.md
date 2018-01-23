@@ -4,7 +4,7 @@ Un _plugin_ es un conjunto de scripts que expande las capacidades y la funcional
 Nuestro plugin para la Web App _Cardify_ permite ver al usuario el atributo `alt`sobre cada imagen en la que se haya hecho hover.
 
 
-## Funcionalidad
+## Funcionalidad 
 
 1. Primero el plugin selecciona todas las imagenes de una página y las reemplaza por un elemento `<figure>`
 
