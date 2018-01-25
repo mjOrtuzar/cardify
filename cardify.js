@@ -1,7 +1,12 @@
 $.fn.cardify = function() {
   $(this).find('img').wrap('<figure></figure>');
-  $('figure').append('<figcaption></figcaption>');
+  $('figure').append('<figcaption style="visibility: visible;"></figcaption>');
 
+  $.each($(this).find('img'), function(i, pkm) {
+    let altPos = $(this).attr('alt').indexOf(' ');
+    $(this).siblings('figcaption').text(pkm['alt'].slice(0, altPos));
+  });
+  
   $('figure img').mouseover(function() {
     const basePkm = $(this).attr('src');
     const evoPkm = $(this).data('evo');
