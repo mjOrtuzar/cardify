@@ -1,19 +1,25 @@
 {
-  "name": "cardify",
+  "name": "guiadetest",
   "version": "1.0.0",
-  "description": "* **Track:** _Common Core_ * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_ * **Unidad:** _Producto final_",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjOrtuzar/cardify.git"
+    "url": "git+https://github.com/mjOrtuzar/clase-test.git"
   },
-  "author": "mjOrtuzar-Dany-Nok-bimiriya",
+  "author": "mjOrtuzar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mjOrtuzar/cardify/issues"
+    "url": "https://github.com/mjOrtuzar/clase-test/issues"
   },
-  "homepage": "https://github.com/mjOrtuzar/cardify#readme"
-} 
+  "homepage": "https://github.com/mjOrtuzar/clase-test#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^5.0.0"
+  }
+}
