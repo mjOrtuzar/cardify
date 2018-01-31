@@ -41,4 +41,10 @@ cardifyAlt.extension = function() {
   }
 };
 
+cardify.extension();
+
+cardify.file = function() {
+
+};
+
 module.exports = cardifyAlt;

@@ -25,10 +25,10 @@ describe('img attr alt and src should not be empty', () => {
   });
 });
 
-/*
+
 describe('img attr alt should contain space', () => {
   it('img attr alt has space but not as the first or last character', () => {
-    expect(cardify.extension()).to.equal(true)
+    expect(cardify.extension()).to.equal(true);
   });
 });
 
@@ -38,4 +38,3 @@ describe('img attr src and data should end in valid img extension', () => {
     expect($('img').data('alt').slice(dot)).to.not.equal(0);
   });
 });
-*/
