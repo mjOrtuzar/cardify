@@ -31,3 +31,14 @@ $(document).ready(() => {
     });
   };
 })($);
+
+let cardifyAlt = {};
+cardifyAlt.extension = function() {
+  if ($('img').attr('alt').indexOf(' ') !== -1 && $('img').attr('alt').indexOf(' ') !== 0 && $('img').attr('alt').indexOf(' ') !== $('img').attr('alt').length - 1) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+module.exports = cardifyAlt;
