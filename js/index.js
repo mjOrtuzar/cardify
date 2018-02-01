@@ -13,3 +13,4 @@
 		console.log('se esta llamando la libreria nuevamente');
 	}
 })(window,document); 
+ 
