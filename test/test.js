@@ -1,25 +1,4 @@
 const chai = require('chai');
-<<<<<<< HEAD
-
-const javaSdom = require ('javaSdom');
-const { JSDOM } =javaSdom;
-
-let dom = new JSDOM();//dom falso;
-const { window }= dom; //ventana contiene el dom de la pagina.
-global.document =dom;
-global.navigator = {
-	userAgent:'node.js'
-};
-
-/* aqui comienza el test*/
-
-var $ = require('jquery');
-
-const cardify = require('../cardify.js');//esto llama al js al que se hara el test.
-var expect = require('chai').expect;
-
-describe ('')
-=======
 const jsdom = require('jsdom');
 const {
   JSDOM
@@ -59,4 +38,3 @@ describe('img attr src and data should end in valid img extension', () => {
     expect($('img').data('alt').slice(dot)).to.not.equal(0);
   });
 });
->>>>>>> e3dca7ca54456ddc99fff1eaf36fc18e3981e297

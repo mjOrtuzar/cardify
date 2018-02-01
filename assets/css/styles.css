@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image: url('../images/background-pokemon-wallpapers.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.poke-logo{
+  width: 30%;
+  margin: 1% 35%;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+.panel-instructions{
+  margin: 0 3%;
+}
+
+.notes{
+  list-style: circle;
+  padding: 0.5% 1%;
+}
