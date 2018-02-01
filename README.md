@@ -27,10 +27,14 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 + Dependencias de Desarrollo 
   - Eslint `~v.4.15.0`
+  - Browserify `~v.15.2.0`
 
 + Dependencias de Producción 
   - jQuery `~v.3.2.1`
   - Bootstrap `~v.3.3.7`
+  - Mocha `~v.5.0.0`
+  - Chai `~v.4.1.2`
+  - JSDOM `~v.11.6.1`
 
 
 ## Uso
