@@ -1,5 +1,5 @@
-const $ = require('jquery');
 
+<<<<<<< HEAD
 $(document).ready(() => {
   $('section').cardify({});
 });
@@ -42,3 +42,5 @@ cardifyAlt.extension = function() {
 };
 
 module.exports = cardifyAlt;
+=======
+>>>>>>> upstream/cardify2017

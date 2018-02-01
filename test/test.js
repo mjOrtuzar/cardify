@@ -31,3 +31,10 @@ describe('img attr alt should contain space', () => {
     expect(cardify.extension()).to.equal(true);
   });
 });
+
+describe('img attr src and data should end in valid img extension', () => {
+  it('img attr src and data end in .jpg, .png or .gif', () => {
+    var dot = $('img').data().lastIndexOf('.');
+    expect($('img').data('alt').slice(dot)).to.not.equal(0);
+  });
+});
