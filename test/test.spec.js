@@ -3,7 +3,7 @@ const jsdom = require('jsdom');
 const {
   JSDOM
 } = jsdom;
-let dom = new JSDOM('<div><img src="ruta" data-cardify="ruta" alt="testA testB"></div>');
+let dom = new JSDOM('<div><img src="ruta" data-cardify="ruta" alt="nameA nameB"></div>');
 const {
   window
 } = dom;
@@ -29,12 +29,5 @@ describe('img attr alt and src should not be empty', () => {
 describe('img attr alt should contain space', () => {
   it('img attr alt has space but not as the first or last character', () => {
     expect(cardify.extension()).to.equal(true);
-  });
-});
-
-describe('img attr src and data should end in valid img extension', () => {
-  it('img attr src and data end in .jpg, .png or .gif', () => {
-    var dot = $('img').data().lastIndexOf('.');
-    expect($('img').data('alt').slice(dot)).to.not.equal(0);
   });
 });
