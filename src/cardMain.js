@@ -1,6 +1,8 @@
+//const $ = require('jQuery'); // quitar // para hacer el test.
 $(document).ready(function() { // se llama al plugin
   $('section').cardify({});
 });
+
 
 (function($) {
   $.fn.cardify = function() {

@@ -4,7 +4,7 @@
 }
 
 body{
-  background-image: url('../images/background-pokemon-wallpapers.jpg');
+  background-image: url('../images/rotom-dex.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,8 +16,11 @@ body{
 }
 
 h1{
+  font-family: 'Boogaloo', cursive;
   color: white;
   text-align: center;
+  font-size: 3em;
+  font-stretch: expanded;
 }
 
 .panel-instructions{
@@ -27,4 +30,12 @@ h1{
 .notes{
   list-style: circle;
   padding: 0.5% 1%;
+}
+
+figcaption{
+  font-family: 'VT323', monospace;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  background-color: darkblue;
 }

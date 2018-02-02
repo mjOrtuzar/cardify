@@ -13,8 +13,8 @@ global.navigator = {
   userAgent: 'node.js',
 };
 
-var $ = require('jquery');
-const cardify = require('../src/index');
+const $ = require('jquery');
+const cardify = require('../src/cardMain');
 var expect = require('chai').expect;
 
 describe('img attr alt and src should not be empty', () => {

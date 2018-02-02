@@ -1,2 +1,2 @@
-const cardifyImg = require('src/cardify_plugin_jquery');
+const cardifyImg = require('src/cardMain');
 module.exports = cardifyImg;
